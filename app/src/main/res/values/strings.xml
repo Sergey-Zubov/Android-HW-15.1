@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android-HW-15.1</string>
+    <string name="btn_synchronisation">synchronisation</string>
+    <string name="btn_start">start</string>
+</resources>
