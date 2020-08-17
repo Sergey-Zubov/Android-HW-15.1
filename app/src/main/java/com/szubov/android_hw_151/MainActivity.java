@@ -1,15 +1,17 @@
 package com.szubov.android_hw_151;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import java.time.LocalTime;
-
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String CURRENT_DATE = "currentDate";
+    private static final String LOG_TAG = "My app";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        Log.d(LOG_TAG, "MainActivity -> initViews");
         final int time1 = 6;
         final int time2 = 14;
         final int time3 = 15;
@@ -27,17 +30,20 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnSynchronization).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(LOG_TAG, "MainActivity -> initViews ->btnSynchronisation -> onClick");
                 Intent intent = new Intent(Intent.ACTION_SYNC);
-                int timeNow = LocalTime.now().getHour();
+                Date currentDate = new Date();
+                int hours = currentDate.getHours();
 
-
-                if (timeNow >= time1 && timeNow < time2) {
+                if (hours >= time1 && hours < time2) {
                     intent.setData(Uri.parse("http://morning"));
-                } else if (timeNow >= time2 && timeNow < time3) {
+                } else if (hours >= time2 && hours < time3) {
                     intent.setData(Uri.parse("http://afternoon"));
                 } else {
                     intent.setData(Uri.parse("http://evening"));
                 }
+                intent.putExtra(CURRENT_DATE, currentDate.toString());
+                startActivity(intent);
             }
         });
     }

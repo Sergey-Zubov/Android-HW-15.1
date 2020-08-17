@@ -2,4 +2,6 @@
     <string name="app_name">Android-HW-15.1</string>
     <string name="btn_synchronisation">synchronisation</string>
     <string name="btn_start">start</string>
+    <string name="data_syncing_has_started">Data syncing has started</string>
+    <string name="synchronization_is_completed_successfully">Synchronization is completed successfully</string>
 </resources>
