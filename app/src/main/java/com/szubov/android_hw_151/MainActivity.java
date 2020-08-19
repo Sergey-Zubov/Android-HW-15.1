@@ -6,12 +6,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String CURRENT_DATE = "currentDate";
-    private static final String LOG_TAG = "My app";
+    protected static final String CURRENT_DATE = "currentDate";
+    protected static final String LOG_TAG = "My app";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

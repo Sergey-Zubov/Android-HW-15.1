@@ -7,7 +7,8 @@
     android:gravity="center_vertical"
     tools:context=".AfternoonActivity">
 
-    <TextView
+    <include layout="@layout/sync_interface_objects"/>
+    <!--<TextView
         android:id="@+id/textViewCurrentTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,6 +24,6 @@
         android:layout_marginRight="20dp"
         android:backgroundTint="@color/colorBtn"
         android:background="@drawable/corners"
-        android:text="@string/btn_start"/>
+        android:text="@string/btn_start"/>-->
 
 </androidx.appcompat.widget.LinearLayoutCompat>

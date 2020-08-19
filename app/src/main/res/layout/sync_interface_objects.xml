@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_vertical"
-    tools:context=".AfternoonActivity">
+    android:gravity="center_vertical">
 
-    <include layout="@layout/sync_interface_objects"/>
-    <!--<TextView
+    <TextView
         android:id="@+id/textViewCurrentTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,6 +22,6 @@
         android:layout_marginRight="20dp"
         android:backgroundTint="@color/colorBtn"
         android:background="@drawable/corners"
-        android:text="@string/btn_start"/>-->
+        android:text="@string/btn_start"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
