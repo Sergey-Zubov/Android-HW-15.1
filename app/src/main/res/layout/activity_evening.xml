@@ -5,25 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    tools:context=".AfternoonActivity">
+    tools:context=".EveningActivity">
 
     <include layout="@layout/sync_interface_objects"/>
-    <!--<TextView
-        android:id="@+id/textViewCurrentTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
-
-    <Button
-        android:id="@+id/btnStartSynchronisation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@color/colorBtn"
-        android:background="@drawable/corners"
-        android:text="@string/btn_start"/>-->
 
 </androidx.appcompat.widget.LinearLayoutCompat>

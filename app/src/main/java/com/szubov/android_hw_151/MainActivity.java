@@ -10,7 +10,6 @@ import android.view.View;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
-
     protected static final String CURRENT_DATE = "currentDate";
     protected static final String LOG_TAG = "My app";
 

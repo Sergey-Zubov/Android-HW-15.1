@@ -7,7 +7,7 @@ public class MorningActivity extends Synchronisation {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(LOG_TAG, "EveningActivity -> onCreate");
+        Log.d(LOG_TAG, "MorningActivity -> onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morning);
 

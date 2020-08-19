@@ -7,7 +7,7 @@ public class AfternoonActivity extends Synchronisation {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(LOG_TAG, "EveningActivity -> onCreate");
+        Log.d(LOG_TAG, "AfternoonActivity -> onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_afternoon);
 
