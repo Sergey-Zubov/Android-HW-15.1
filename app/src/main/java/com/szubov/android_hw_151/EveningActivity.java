@@ -11,6 +11,6 @@ public class EveningActivity extends Synchronisation {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evening);
 
-        initViews(EveningActivity.this);
+        initViews();
     }
 }

@@ -1,6 +1,5 @@
 package com.szubov.android_hw_151;
 
-import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
@@ -12,7 +11,7 @@ public class Synchronisation extends MainActivity {
     protected Button mBtnStartSynchronisation;
     protected TextView mTextViewCurrentTime;
 
-    protected void initViews(final Context context) {
+    protected void initViews() {
         mBtnStartSynchronisation = findViewById(R.id.btnStartSynchronisation);
         mTextViewCurrentTime = findViewById(R.id.textViewCurrentTime);
 
@@ -22,9 +21,9 @@ public class Synchronisation extends MainActivity {
             @Override
             public void onClick(View v) {
                 Log.d(LOG_TAG, "Synchronisation -> btnStartSynchronisation -> onClick");
-                Toast.makeText(context.getApplicationContext(), R.string.data_syncing_has_started,
+                Toast.makeText(getApplicationContext(), R.string.data_syncing_has_started,
                         Toast.LENGTH_SHORT).show();
-                Toast.makeText(context.getApplicationContext(),
+                Toast.makeText(getApplicationContext(),
                         R.string.synchronization_is_completed_successfully,
                         Toast.LENGTH_SHORT).show();
 
